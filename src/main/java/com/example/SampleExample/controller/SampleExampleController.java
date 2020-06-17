@@ -2,6 +2,7 @@ package com.example.SampleExample.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="/sample")
 public class SampleExampleController {
 
-@RequestMapping(value="/helloworld")
+@RequestMapping(value="/helloworld",method = RequestMethod.GET)
 public String helloWorld()
 {
 
